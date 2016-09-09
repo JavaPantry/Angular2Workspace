@@ -13,7 +13,7 @@
     "webpack-dev-server": "^1.15.1"
   },
   "scripts": {
-    "test": "webpack --watch",
+    "test": "webpack",
     "start": "webpack-dev-server"
   },
   "author": "",

@@ -1,1 +1,1 @@
-document.write('Hello Alex! Let\'s play with Webpack... run from updated dist(2)');
+document.write('Hello Alex! Let\'s play with Webpack... run from updated dist(3)');

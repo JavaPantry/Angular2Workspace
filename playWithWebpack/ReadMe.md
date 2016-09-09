@@ -1,5 +1,10 @@
 #Experiment with `webpack`
 
+This minimalistic project ready to run
+- type in terminal playWithWebpack>_webpack_
+- _webpack_ will watch changes and rebundle project if changes detected
+
+---
 - Chapter 10 of Angular_2_Development_with_TypeScript_v7_MEAP.pdf
 - Additional guide https://webpack.github.io/docs/usage.html
 	
