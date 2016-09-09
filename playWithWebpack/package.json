@@ -1,0 +1,21 @@
+{
+  "name": "play_webpack",
+  "version": "1.0.0",
+  "description": "play room",
+  "main": "main.js",
+  "dependencies": {
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.1"
+  },
+  "devDependencies": {
+    "ts-loader": "^0.8.2",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.1"
+  },
+  "scripts": {
+    "test": "webpack --watch",
+    "start": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC"
+}
