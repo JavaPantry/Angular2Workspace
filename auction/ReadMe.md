@@ -39,6 +39,9 @@ Start the server by running the command __npm run startServer__  (_missing 'run'
  Network tab and refresh the application. You’ll see that the size of the optimized application is drastically smaller.
  
 - ERROR in __npm run deploy__  
-
     npm ERR! missing script: deploy
+- error because I shouldn't __npm run deploy__ in server folder, but in client
 
+- restart __npm run startServer__ in server folder
+- restart __npm run deploy__ in client folder
+- error in karma chrome not installed on my inspiron
