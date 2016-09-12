@@ -8,7 +8,7 @@
     "prebuild": "npm run clean && npm run test",
     "build": "webpack --config webpack.prod.config.js --progress --profile --colors --display-error-details --display-cached",
     "startWebpackDevServer": "webpack-dev-server --inline --colors --progress --display-error-details --disaply-modules --display-cached --port 8080",
-    "test": "karma start karma.conf.js",
+    "deleteTask_test": "karma start karma.conf.js",
     "predeploy": "npm run build && rimraf ../server/build/public && mkdirp ../server/build/public",
     "deploy": "copyup dist/* ../server/build/public"
   },
