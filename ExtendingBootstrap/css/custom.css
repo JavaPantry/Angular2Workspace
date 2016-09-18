@@ -1,0 +1,36 @@
+.container .jumbotron {
+    border-radius: 0;
+}
+
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    /* original border-radius: .25em */
+    border-radius: 0;
+}
+
+.label-primary {
+    background-color: #bada55;
+}
+
+.label-primary[href]:hover,
+.label-primary[href]:focus {
+    background-color: #a9c944;
+    border-radius: .75em
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited {
+    color: #607bda;
+}
+
