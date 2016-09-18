@@ -2,7 +2,12 @@
 
 Install bootstrap with npm
 
-	npm install bootstrap@3
+	>npm install bootstrap@3
+	>npm install -g grunt-cli
+	>cd node_modules\bootstrap
+	>\node_modules\bootstrap>npm install
+	\ExtendingBootstrap\node_modules\bootstrap>grunt dist
+
 
 [Free bootstrap themes @ bootswatch](http://bootswatch.com/paper/)
 
