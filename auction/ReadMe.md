@@ -1,4 +1,4 @@
-- Read Appendix B install typescript 'npm install -g typescript'
+- Read Appendix B install typescript '__npm install -g typescript__'
 	-- typescript@1.8.10
 - confirm version and availability
 	C:\Users\ptitchkin>tsc --version
@@ -9,7 +9,7 @@
 - Step 1: from book p#335 
 >In the command line change to the server directory and run __npm install__ to get all
 required dependencies for the server’s portion of the application.
-To use the local compiler run the command npm __run tsc__, which will transpile the
+To use the local compiler run the command __npm run tsc__, which will transpile the
 server’s code and will create auction.js and model.js (and their source maps) in the
 directory build as configured in tsconfig.json. This is the code for the Auction’s server.
 Start the server by running the command __npm run startServer__  (_missing 'run' in original_). It’ll print the message
@@ -38,10 +38,10 @@ Start the server by running the command __npm run startServer__  (_missing 'run'
  application served by the Node server. Open the Chrome Developer Tools panel in the
  Network tab and refresh the application. You’ll see that the size of the optimized application is drastically smaller.
  
-- ERROR in __npm run deploy__  
-    npm ERR! missing script: deploy
 - error because I shouldn't __npm run deploy__ in server folder, but in client
 
 - restart __npm run startServer__ in server folder
 - restart __npm run deploy__ in client folder
 - error in karma chrome not installed on my inspiron
+- TMP Fix take out `"test": "karma start karma.conf.js",` from Angular2Workspace\auction\client\package.json
+- mark it with prefix 'deleteTask_'> "deleteTask_test": "karma start karma.conf.js",
