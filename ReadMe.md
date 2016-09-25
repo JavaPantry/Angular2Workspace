@@ -23,7 +23,10 @@ and inspired [MinuteTracker](https://github.com/mavharsha/MinuteTracker)
 [angular2 seed project](https://github.com/dacho68/angular2-samples)
 
 [Web-Development-Templates](https://github.com/ErikVanNorstrand/Web-Development-Templates/tree/master/Angular2-Node5_ExpressJS)
-__Web-Development-Templates__ project use _ag-grid_
+
+__Web-Development-Templates__ project use _ag-grid_ and _ng2-bootstrap_
+
+
 [Best Angular 2 Data Grid](https://www.ag-grid.com/best-angular-2-data-grid/index.php)
 
 [Angular2 Hackathon Project](https://www.angularattack.com/entries/2853-angoor)
