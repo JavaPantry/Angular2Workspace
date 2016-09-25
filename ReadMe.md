@@ -21,9 +21,14 @@ check the __<> Code__ tab for more projects
 Read article [What I Learned From a Month of Tracking Every Minute of My Time  by Sam Shank](https://www.linkedin.com/pulse/productivity-hacks-what-i-learned-from-month-tracking-sam-shank) 
 and inspired [MinuteTracker](https://github.com/mavharsha/MinuteTracker)
 [angular2 seed project](https://github.com/dacho68/angular2-samples)
+
 [Web-Development-Templates](https://github.com/ErikVanNorstrand/Web-Development-Templates/tree/master/Angular2-Node5_ExpressJS)
+__Web-Development-Templates__ project use _ag-grid_
+[Best Angular 2 Data Grid](https://www.ag-grid.com/best-angular-2-data-grid/index.php)
+
 [Angular2 Hackathon Project](https://www.angularattack.com/entries/2853-angoor)
 [posts TypeScript Github Star Ranking at 2016/06/25](https://github.com/38elements/38elements.github.com/blob/2a40787c8a2c301df0c87f9426ceb53d07b369a1/_posts/2016-06-25-typescript-repository-github-star-ranking.md)
+
 
 
 - check handlebars & mustache template engine
