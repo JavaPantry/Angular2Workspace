@@ -3,9 +3,12 @@
 >_“An API for asynchronous programming with observable streams”_
 
 From [Reactive Extensions project](http://reactivex.io/)
-> [RxJS] is a combination of the best ideas from the Observer pattern, the Iterator pattern, and functional
+> RxJS - is a combination of the best ideas from the Observer pattern, the Iterator pattern, and functional
   programming.
 
+References:
+
+- [RxJS v4.0 book](http://xgrommx.github.io/rx-book/index.html)
 
 ###javascript Closure
 
