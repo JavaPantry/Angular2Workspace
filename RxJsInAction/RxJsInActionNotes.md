@@ -233,3 +233,74 @@ these elements is passed in as selector function, also called the predicate or _
 
 ❶ Extract the amount property
 ❷ Reduce the set of amount values with an add function
+
+## 4 Timing with RxJS
+
+### 4.3 Back to the future with RxJS
+
+Stocks prices are made up of a numerical portion and a currency string. We can model this
+with a simple Money Value Object:
+
+> A Value Object is a design pattern used to represent simple immutable data structures whose equality is not based on the entity itself,
+> but on their values. In other words, two value objects are equal only if they have the same value or their corresponding properties contain 
+> the same values. These objects are ideal to transfer immutable state from one component to another.
+
+    const Money = function (val, currency) {
+                            return {
+                                        value: function () {
+                                                            return val;
+                                                },
+                                        currency: function () {
+                                            return currency;
+                                        },
+                                        toString: function () {
+                                            return `${currency} ${val}`;
+                                        }
+                                    };
+                    };
+
+
+Listing 4.5 Simulating a simple the stock ticker widget
+
+    const USDMoney = Money.bind(null, 'USD');❶ Creating a new function to manage USD (default curency to USD)
+    
+    Rx.Observable.interval(2000) ❷ Creating a 2 second interval
+        .skip(1) ❸ Skip the first number emitted, zero
+        .take(5) ❹ Because this is an infinite operator, simulate only 5 values
+        .map(num => new USDMoney(newRandomNumber(num)))
+        .forEach(
+                    price =>  {
+                            document.querySelector('#price').textContent = price;
+                           }
+                 );
+
+Listing 4.6 Augmenting stock data with the time interval
+    
+    Rx.Observable.interval(2000).timeInterval() ❶ Augments the interval value as an object that also includes the precise number of milliseconds between intervals.
+        .skip(1)
+        .take(5)
+        .do(int => console.log(`Checking every ${int.interval} milliseconds`)) ❷ The interval property contains the number of milliseconds elapsed between one interval and the next
+        .map(int => new USDMoney(genRandomNumber(int.value))) ❸ The value property returns the number of intervals emitted by the Observable
+        .forEach(
+                price => {
+                        document.querySelector('#price').textContent = price;
+                        }
+        );
+
+Listing 4.7 Showcase the delay operator
+
+    Rx.Observable.timer(1000) ❶ Emit a value after one second
+        .delay(2000) ❷ Delay the entire sequence by a 2 second offset
+        .timeInterval()
+        .map(int => Math.floor(int.interval / 1000)) ❸ Compute the time elapsed using the interval value from timeInterval()
+        .subscribe(seconds => console.log(`${seconds} seconds`)); ❹ Convert and round the result to seconds
+
+This code reflects what figure 4.8 shows, how the stream is affected by the delay operator to
+create a shifted Observable sequence. Running this code will print “3 seconds” rather than the
+initial time. The effect of this process raises two important points about the nature of a delay:
+
+1. Each operator will only affect the propagation of an event, not its creation.
+2. Time operators act sequentially.
+
+#### 4.3.1 Propagation
+

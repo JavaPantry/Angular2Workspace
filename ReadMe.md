@@ -1,3 +1,5 @@
+# General notes on Angular 2 Workspace
+
 Experimental projects with Angular2 _and webpack_
 ?july archive of github angular2_master?yes
 - Chapter 10 of Angular_2_Development_with_TypeScript_v7

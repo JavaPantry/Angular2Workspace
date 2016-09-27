@@ -38,6 +38,7 @@ OR
 
     recess styles.less --compress > styles.min.css
 
+
 Read how to setup [File watcher](https://www.jetbrains.com/help/webstorm/2016.2/new-watcher-dialog.html)
 
 ## Compiling CSS and JavaScript
@@ -51,12 +52,18 @@ From book:
 Bootstrap uses Grunt for its build system, with convenient methods for working with the framework. It's how we compile our code, run tests, and more
 [Compiling CSS and JavaScript](http://getbootstrap.com/getting-started/#grunt)
 Follow instructio as is.
+Installing Grunt
+To install Grunt, you must first download and install node.js (which includes npm). npm stands for node packaged modules and is a way to manage development dependencies through node.js.
+
+Then, from the command line:
+Install grunt-cli globally with npm install -g grunt-cli.
+Navigate to the root /bootstrap/ directory, then run npm install. npm will look at the package.json file and automatically install the necessary local dependencies listed there.
+When completed, you'll be able to run the various Grunt commands provided from the command line.
+
 change index.html to point new bootstrap
+ 
+ `<link href=".\node_modules\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet">`
 
-<link href=".\bootstrap-3.3.7\dist\css\bootstrap.css" rel="stylesheet">
-
-To run Grunt
-    C:\webStormWS\ExtendingBootstrap\bootstrap-3.3.7>grunt dist
 
 - Save index.html as index-2.html
 
@@ -65,21 +72,51 @@ To run Grunt
 
 - 
 
-    add C:\webStormWS\ExtendingBootstrap\bootstrap-3.3.7\less\canon-theme.less
-    with .container .jumbotron {
-         border-radius: 0;
-         }.
-         .label {
-         border-radius: 0;
-         }
+add C:\webStormWS\ExtendingBootstrap\node_modules\bootstrap\less\canon-theme.less
 
-add canon-theme.less canon-variables.less to bootstrap-3.3.7\less\bootstrap.less
+    .content {
+      .make-md-column(9);
+      article {
+        margin-bottom: 40px;
+      }
+    }
+    .sidebar {
+      .make-md-column(3);
+    }
+    .sidebar-avatar {
+      display: block;
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+    .sidebar-bio {
+      color: @gray;
+    }
+
+add importing _canon-theme.less canon-variables.less_ to the end of _bootstrap\less\bootstrap.less_
 cause page rendering Error
-    //@import "canon-theme.less";
+    
     @import "canon-variables.less";
+    @import "canon-theme.less";
 
+Run Grunt
 
-## TODOs
+    C:\WebStormWS\Angular2Workspace\ExtendingBootstrap\node_modules\bootstrap>grunt dist
 
-- install bootstrap and recess locally
+refresh index
 
+compare with book p.38
+
+![Sidebar-avatar](./docs/customSidebar-avatar.PNG)
+
+## Custom theme
+
+move custom less files to their own sub-folder
+
+    \ExtendingBootstrap\node_modules\bootstrap\less\canon-theme\canon-theme.less
+    \ExtendingBootstrap\node_modules\bootstrap\less\canon-theme\canon-variables.less
+
+and fix _\ExtendingBootstrap\node_modules\bootstrap\less\bootstrap.less_
+
+    @import "canon-theme/canon-variables.less";
+    @import "canon-theme/canon-theme.less";
+    
