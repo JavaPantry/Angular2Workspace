@@ -2,6 +2,9 @@
 
 Install bootstrap with npm
 
+    C:\WebStormWS\Angular2Workspace\ExtendingBootstrap>npm install jquery@2.2.4
+    `-- jquery@2.2.4
+
 	>npm install bootstrap@3
 	>npm install -g grunt-cli
 	>cd node_modules\bootstrap
@@ -43,15 +46,27 @@ Read how to setup [File watcher](https://www.jetbrains.com/help/webstorm/2016.2/
 
 ## Compiling CSS and JavaScript
 
-From book:
+Create _less_ file \ExtendingBootstrap/less>main.less:
 
-    C:\webStormWS\ExtendingBootstrap>recess less/main.less --compile > css/main.css
+    @import "../node_modules/bootstrap/less/bootstrap.less";
+
+Try to compile with recess
+
+    C:\webStormWS\ExtendingBootstrap/less>recess main.less --compile > css/main.css
     > produce empty main.css
+    C:\WebStormWS\Angular2Workspace\ExtendingBootstrap\less>recess main.less
+    Analyzing the following files: main.less
+    Parser error in ..\node_modules\bootstrap\less\type.less
+    
+         211.   dd {
+         212.     &:extend(.clearfix all); // Clear the floated `dt` if an empty `dd` is present
+         213.   }
+
 
 
 Bootstrap uses Grunt for its build system, with convenient methods for working with the framework. It's how we compile our code, run tests, and more
 [Compiling CSS and JavaScript](http://getbootstrap.com/getting-started/#grunt)
-Follow instructio as is.
+Follow instructions as is.
 Installing Grunt
 To install Grunt, you must first download and install node.js (which includes npm). npm stands for node packaged modules and is a way to manage development dependencies through node.js.
 
