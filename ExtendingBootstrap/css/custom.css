@@ -8,7 +8,7 @@
     font-size: 75%;
     font-weight: bold;
     line-height: 1;
-    color: #ffffff;
+    color: #efefef;
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
@@ -17,12 +17,13 @@
 }
 
 .label-primary {
-    background-color: #bada55;
+    background-color: #da071c;
+    border-radius: .50em
 }
 
 .label-primary[href]:hover,
 .label-primary[href]:focus {
-    background-color: #a9c944;
+    background-color: #fd0000;
     border-radius: .75em
 }
 
@@ -31,6 +32,6 @@ a:active,
 a:focus,
 a:hover,
 a:visited {
-    color: #607bda;
+    color: #ffffff;
 }
 
