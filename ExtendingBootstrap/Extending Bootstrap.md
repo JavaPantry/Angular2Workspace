@@ -134,4 +134,10 @@ and fix _\ExtendingBootstrap\node_modules\bootstrap\less\bootstrap.less_
 
     @import "canon-theme/canon-variables.less";
     @import "canon-theme/canon-theme.less";
+
     
+## bootstrap Tools and generators accordeon menu
+Google: `bootstrap accordion menu` or `bootstrap templates free download`
+
+[snippets, tables and generators; accordeon menu](http://bootsnipp.com/snippets/OVVM)
+
