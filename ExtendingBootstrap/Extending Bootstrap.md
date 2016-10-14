@@ -113,7 +113,7 @@ cause page rendering Error
     @import "canon-variables.less";
     @import "canon-theme.less";
 
-Run Grunt
+##Run Grunt
 
     C:\WebStormWS\Angular2Workspace\ExtendingBootstrap\node_modules\bootstrap>grunt dist
 
