@@ -22,7 +22,10 @@ export class TodoBackendService {
     saveTodo(newTodo: Todo) : Observable<List<Todo>> {
         var headers = new Headers();
         headers.append('Content-Type', 'application/json; charset=utf-8');
-
+        /**
+         * Pitfall #2 - avoid duplicate HTTP calls by using cache()
+         * share() vs. cache()
+         */
         return this.http.post('/todo', JSON.stringify(newTodo.toJS()),{headers}).share();
     }
 

@@ -3,7 +3,15 @@
 This repository is an example of how to build a Flux-like Angular 2 application using RxJs and the Observable Data Services design pattern. 
 
 See this blog post for further details on this application architecture: 
-[How to build Angular 2 Flux apps using RxJs Observable Data Services - Pitfalls to avoid](http://blog.jhades.org/angular-2-application-architecture-building-applications-using-rxjs-and-functional-reactive-programming-vs-redux/)
+
+This project referring to article  [How to build Angular 2 Flux apps using RxJs Observable Data Services - Pitfalls to avoid](http://blog.angular-university.io/how-to-build-angular2-apps-using-rxjs-observable-data-services-pitfalls-to-avoid/)
+
+
+Original reference by mistake [Flux-like apps with a single atom of state:Building Redux-like apps using RxJs](http://blog.jhades.org/angular-2-application-architecture-building-applications-using-rxjs-and-functional-reactive-programming-vs-redux/)
+
+[GitHub Project for Flux-like apps with a single atom of state:Building Redux-like apps using RxJs](https://github.com/jhades/angular2-rxjs-single-atom-example)
+
+
 
 ## Installation
 

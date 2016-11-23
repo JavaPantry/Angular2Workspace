@@ -16,7 +16,9 @@ export class TodoStore {
     constructor(private todoBackendService: TodoBackendService) {
         this.loadInitialData();
     }
-
+    /*
+    * Pitfall #1 - don't expose subjects directly
+    */
     get todos() {
         return asObservable(this._todos);
     }
