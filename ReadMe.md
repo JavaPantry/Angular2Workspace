@@ -1,5 +1,16 @@
 # General notes on Angular 2 Workspace
 
+[ubiquits framework](http://ubiquits.com/guide/database/)
+
+#### Google `angular2 product shop orders`
+- [github Angular2 Shop app](https://github.com/nawalgupta/angular2-shop)
+- [github Simple Angular2ShopApp](https://github.com/fayway/Angular2ShopApp)
+
+- [Higher Order Components Angular2](https://github.com/fayway/Angular2ShopApp)
+- [Create a simple reactive store for Angular 2](https://angularclass.com/blog/create-a-simple-reactive-store-for-angular-2/)
+- []()
+
+
 Experimental projects with Angular2 _and webpack_
 ?july archive of github angular2_master?yes
 - Chapter 10 of Angular_2_Development_with_TypeScript_v7

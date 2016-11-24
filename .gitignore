@@ -1,6 +1,7 @@
 # Ignore generated datafile 
 dbUnitIntegrationData.data
 
+
 # Ignore docs files
 _gh_pages
 _site
@@ -46,6 +47,7 @@ docs/.jekyll-metadata
 bower_components
 node_modules
 dist
+dist1
 typings
 
 *.log

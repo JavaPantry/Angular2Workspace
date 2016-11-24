@@ -12,6 +12,8 @@ Original reference by mistake [Flux-like apps with a single atom of state:Buildi
 [GitHub Project for Flux-like apps with a single atom of state:Building Redux-like apps using RxJs](https://github.com/jhades/angular2-rxjs-single-atom-example)
 
 
+See also [Create a simple reactive store for Angular 2](https://angularclass.com/blog/create-a-simple-reactive-store-for-angular-2/)
+
 
 ## Installation
 
