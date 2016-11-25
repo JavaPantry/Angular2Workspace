@@ -7,8 +7,7 @@ export default (app, router) => {
 
         var data = req.body;
         console.log("Pr data",data);
-
-        Table.create(data, (err, newRow) => {
+      Table.create(data, (err, newRow) => {
 			if (err)
 				res.send(err);
 			else
