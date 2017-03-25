@@ -56,22 +56,30 @@ Angular2-Shop uses a number of open source projects to work properly:
 
 ng2Shop requires [Node.js](https://nodejs.org/) v4+ to run.
 
+You need to start MongoDb server
+
+```
+c:\Program Files\MongoDB\Server\3.2\bin>mongod
+```
+
 You need Gulp installed globally:
 
-```sh
+```
 $ npm i -g gulp
 ```
 
-```sh
+```
 $ git clone [git-repo-url] 
 $ cd project-dir
 $ npm i -d
 $ npm start
 ```
 
+
+
 From another terminal 
 
-```sh
+```
 $ gulp serve
 ```
 
